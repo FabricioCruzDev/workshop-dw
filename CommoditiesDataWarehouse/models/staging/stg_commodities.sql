@@ -5,7 +5,7 @@ with source as (
         "Close",
         "ticker_id"
     from
-        {{source ('dbcommodities_1b1h', 'commodities')}}
+        {{source ('dbcommodities', 'commodities')}}
 ),
 
 --renamed

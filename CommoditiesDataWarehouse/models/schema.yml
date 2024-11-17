@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: dbcommodities_1b1h
+  - name: dbcommodities
     schema: public
     tables:
       - name: commodities
@@ -12,15 +12,15 @@ sources:
           - name: Close
             description: "Preço de fechamento da commodity"
           - name: ticker_id
-            description: "Símbolo da commodity"
+            description: "Ticker da commodity"
 
       - name: movimentacao_commodities
         description: "Tabela seed"
         columns:
           - name: date
             description: "Data da transação"
-          - name: symbol
-            description: "Símbolo da commodity"
+          - name: ticker
+            description: "Ticker da commodity"
           - name: action
             description: "Tipo de transação (buy/sell)"
           - name: quantity
