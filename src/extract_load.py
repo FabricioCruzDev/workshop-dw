@@ -44,7 +44,6 @@ def buscar_todos_dados_commodities(commodities):
 def salvar_no_postgres(df, schema='public'):
     df.to_sql('commodities', engine, if_exists='replace', index=True, index_label='Date', schema=schema)
 
-
 if __name__ == "__main__":
     df_final = buscar_todos_dados_commodities(commodities)
     salvar_no_postgres(df_final)
